@@ -1,0 +1,27 @@
+{% extends 'student_dashboard.html' %}
+{% block body %}
+<div class="container">
+    <div class="col-12 d-flex align-items-center justify-content-center">
+        <!-- <div class="bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-650">
+            <center><lottie-player src="https://assets1.lottiefiles.com/packages/lf20_wEt2nn.json"
+                    background="transparent" speed="1" style="width: 500px; height: 300px;" loop
+                    autoplay></lottie-player></center>
+            <div class="text-center text-md-center mb-4 mt-md-0">
+                <h1 class="mb-0 h3">Hi, Student: {{session.name}}</h1>
+            </div>
+        </div> -->
+        <div
+            class="bg-white shadow-soft border rounded p-4 p-lg-5 w-100 prof_border">
+            <div class="text-center text-md-center mb-4 mt-md-0 py-5">
+                <img src="../static/logo_survalance.png" height="90" alt>
+                <div class="welcome mt-5">
+                    <h1 class="mb-0 display-3">Welcome </h1>
+                    <h2 class="prof font-weight-bolder"><span
+                            class="cumtom_primary">
+                            Student:</span> {{session.name}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,151 @@
+{% extends 'layout.html' %}
+{% block body %}
+<script
+  src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<html>
+
+  <head>
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col">
+          <div class="card">
+            <div class="row card-body pr-0 pb-0">
+
+              <div class="col">
+                <div class="content mt-6">
+                  <h1 class="font-weight-bolder display-2">Exam
+                    <span
+                      class="font-weight-bolder display-2 cumtom_primary">Surveillance</span>
+                  </h1>
+                  <h3 class="display-4 mb-4">Protect. Monitor. Verify.</h3>
+                  <p class="lead mb-4 text-muted">In an increasingly digital
+                    world, ensuring the integrity of your online exams is more
+                    crucial than ever. Our exam surveillance system offers the
+                    perfect blend of technology and efficiency to secure your
+                    testing environment.</p>
+                </div>
+              </div>
+              <div class="col text-right">
+                <img
+                  src="{{ url_for('static', filename='myproctoraiindex.gif') }}" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="content content-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+          </div>
+        </div>
+
+        <div class="row align-items-center my-large mb-5">
+          <div class="col-md-6">
+            <div id="platform-exam_proctoring" class="platform-animation">
+              <img class="mb-3 mt-3" src="/static/e16.png" alt>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 offset-lg-1">
+            <h1 class="font-weight-bolder display-3">Effortless
+              <span
+                class="font-weight-bolder display-3 cumtom_primary">Exam
+                Proctoring</span>
+            </h1>
+            <p class="lead mb-4 text-muted">An all-inclusive remote monitoring
+              solution.
+              <ul class="feature-list mt-4 pl-3">
+                <li><b>Automated Proctoring:</b> Leverage AI to monitor exams in
+                  real-time, detecting and preventing cheating.</li>
+                <li><b>Create Questions:</b> Easily design custom exam questions
+                  tailored to your curriculum and testing needs.</li>
+                <li><b>Professional Review:</b> Get expert oversight and review
+                  of exam
+                  sessions to ensure compliance and integrity.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="row align-items-center my-large">
+        <div class="col-md-6 order-md-2 offset-lg-1 ">
+        <img class="mb-3 mt-3" src="/static/feature-platform-2.png" alt="">
+        </div>
+        <div class="col-md-6 col-lg-5 order-md-1">
+        <h1 class="display-2 mb-4">Content Protection</h1>
+        <p class="lead mb-4 text-muted">MyProctor.ai ensures exam integrity by preventing internet navigation, use of mobile devices, screen captures, printing or sharing.</p>
+        <ul class="feature-list mt-4">
+        <li>Distribution Prevention</li>
+        <li>Copy/Print/Download Restrictions</li>
+        </ul>
+        </div>
+        </div> -->
+
+        <!-- <div class="row align-items-center my-large">
+        <div class="col-md-6">
+        <img class="mb-3 mt-3" src="/static/feature-content-protection-2.png" alt="">
+        </div>
+        <div class="col-md-6 col-lg-5 offset-lg-1">
+        <h1 class="display-2 mb-4">Distribution Prevention</h1>
+        <p class="lead mb-4 text-muted">MyProctor.ai prevents test distribution through a host of adjustable settings to restrict the ability to copy and paste, print, download or make screen captures while automatically clearing caches and disabling extensions during the assessment to keep exam content secure.</p>
+        </div>
+        </div> -->
+
+        <div class="row align-items-center my-large ml-5">
+          <div class="col-md-6 order-md-2 offset-lg-1 ">
+            <img class="mb-3 mt-3" src="/static/admin-dashboard-1.png" alt>
+          </div>
+          <div class="col-md-6 col-lg-5 order-md-1">
+            <h1 class="font-weight-bolder display-3">Admin
+              <span
+                class="font-weight-bolder display-3 cumtom_primary">Dashboard</span>
+            </h1>
+            <p class="lead mb-4 text-muted">Create global settings and usage
+              reports that give you actionable information
+              by department, school or institution. Filter activity and
+              reporting by course, test-taker, or exam.</p>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div id="platform-data_analytics"
+              class="platform-animation mb-3 mt-3">
+              <img class="mb-3 mt-3" src="/static/Aggregate-Exam-Data.png" alt>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 offset-lg-1">
+            <h1 class="font-weight-bolder display-3">Data
+              <span
+                class="font-weight-bolder display-3 cumtom_primary">Analytics</span>
+            </h1>
+
+            <p class="lead mb-4 text-muted">Gain instant, objective insights
+              after every assessment to enhance decision-making.
+            </p>
+            <ul class="feature-list mt-4 pl-3">
+              <li><b>Administrative Dashboard:</b> Access comprehensive data and
+                metrics in one centralized location.</li>
+              <li> <b>Student Monitoring:</b> Track individual performance and
+                identify
+                trends in real-time.</li>
+              <li> <b>Aggregate Exam Data:</b> Analyze exam results across
+                multiple
+                sessions for deeper insights.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="custom_bg py-3">
+      <div class="container">
+        <div class="row">
+          <img src="../static/logo_survalance.png" class="m-auto" height="60"
+            alt>
+        </div>
+      </div>
+    </section>
+    {% endblock %}
